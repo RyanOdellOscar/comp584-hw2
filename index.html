@@ -12,7 +12,7 @@
 			img { -ms-interpolation-mode: bicubic; }
 			
 			/* RESET STYLES */
-			img { border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
+			img { border: 0; height: 200px; width: auto;display: block; margin: 0 auto; line-height: 100%; outline: none; text-decoration: none; }
 			table { border-collapse: collapse !important; }
 			body { height: 100% !important; margin: 0 !important; padding: 0 !important; width: 100% !important; }
 			
@@ -47,6 +47,23 @@
 			}
 
 			/* Universal styles for links and stuff */
+			a {
+  				color: blue;
+  				text-decoration: underline;
+				font-size: 15px;
+			}
+
+			* {
+  				box-sizing: border-box;
+  				margin-right: 75px;
+				margin-left: 75px;
+  				padding: 5px;
+			}
+
+			a:hover {
+  				text-decoration: underline;
+				color: green;
+			}
 		
 
 			/* Responsive styles */
@@ -58,26 +75,46 @@
 
 
 	  <!-- Logo image -->
+	   <img src="images/logo.png" alt="Company Logo"/>
 
     
     
 		<!-- Headline -->
+		 <div class="headline">
+			<h1 style="text-align:center; color: blue; font-size: 60px;">Welcome to Our Newsletter</h1>
+		 </div>
 
     
     
 		<!-- Hero Image -->
+		 <span class="span-image" style="display: block; background-color: greenyellow;">
+		 <img src="images/hero.png" alt="Company Product"/>
+		 </span>
 
     
 
 		<!-- Body copy -->
-
+		<div class="body-copy">
+		 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>	
+		 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+		Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris.</p>
+		</div>
     
 
 		<!-- Button -->
+		 <section class="clickme">
+      	<button class="clickmeButton">Subscribe to us!</button>
+    	</section>
 
     
     
 		<!-- Footer information: Always include an unsubscribe link! -->
+		 <footer>
+			<p><a href="unsubscribe.html">Unsubscribe</a> if you must...</p>
+		 </footer>
 
 
 		
